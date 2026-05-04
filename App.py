@@ -1,6 +1,10 @@
 import os
 from flask import Flask, request, jsonify
 import openai
+from dotenv import load_dotenv
+
+# Esta linea es la que lee tu llave secreta desde el archivo .env
+load_dotenv()
 
 app = Flask(__name__)
 
