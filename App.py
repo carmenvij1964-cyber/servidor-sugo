@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 import requests
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 # Aquí es donde Sugo o MacroDroid enviarán la información
 @app.route('/webhook', methods=['POST'])
